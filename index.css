@@ -1,0 +1,51 @@
+html,
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.controls {
+    position: absolute;
+    padding: 5px;
+    margin: 15px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    display: grid;
+    border-style: groove;
+    gap: 5px;
+
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+#canvascontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+#shadercanvas {
+    background-color: aqua;
+}
+* {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
